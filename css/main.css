@@ -1,0 +1,251 @@
+/*start main rules*/
+
+
+
+*{
+   box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: all .5s ease-in-out;
+    font-family: "Segoe UI",Arial,sans-serif;}
+
+
+.clear_fix{clear: both;}
+.container{
+    width:1170px;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 620px){
+    .container{width:800px}
+    .features{height:auto}
+    .features section{width:100%}
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 3px;
+    line-height: 1.15;
+    margin: 18px;}
+
+[type="button"],[type="submit"]{
+    margin: 10px;
+    padding: 15px;
+    background-color:rgb(0, 162, 255);
+    border: 2px solid rgb(0, 162, 255);
+    color:white;
+
+}
+[type="button"]:hover ,[type="submit"]:hover{
+    background-color:#333 ;
+    color:rgb(0, 162, 255);
+    cursor: pointer;
+
+}
+p{padding-top: 50px;
+line-height: 1.7;
+font-size: larger;
+}
+
+a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+a:hover{  background: #ddd;
+    color: black;}
+    /*end main rules*-----------------------------------*/
+header{position: relative;}
+i:hover{    transform: scale(1.2)
+}
+header nav{
+    background-color:#333;
+    color:white;
+    overflow: hidden;
+    font-weight: bold;
+    margin: 0;
+    position: fixed;
+    top:0;
+    width:100%;
+    
+}
+
+header nav #search{
+    float:right;
+    margin: 15px;
+
+}
+header nav i.chk{float:left;margin: 10px 2px;
+color:rgb(0, 162, 255);}
+
+header nav i.sch{float:right;margin: 15px 5px;}
+header nav h3{
+    margin: 6px 150px 6px 10px;
+    float: left;
+}
+header span{
+    color:rgb(0, 162, 255);
+    font-size: xx-large;
+}
+
+header nav ul{margin:0;}
+header nav ul li {
+    float:left;
+    padding:0;
+    font-size: larger;
+    margin:0 ;
+}
+header nav ul li:hover{
+    background-color: #555;
+    color:rgb(0, 162, 255);
+}
+
+header .slider{
+    background-image: url("../images/slider.jpeg");
+    height:800px;
+    text-align: center;
+    background-size: cover;
+    color: #0a2ffe;
+    margin-top: 50px;
+    
+}
+header .slider h1{
+    margin-top:150px;
+    font-size: 40pt;
+    color:white;
+    text-shadow: 10px 10px 15px #333, -10px -10px 15px #333;
+}
+header .slider h2{color:white}
+
+.content{
+    height:1500px;
+    background-color: #2d99f7;
+    color:white;
+}
+.content .features{
+    height:33.333%;
+    overflow: hidden;
+}
+.features i{float: left;margin: 60px 13px;}
+.features h1{float: left; margin-top: 10px;
+padding:50px;}
+.features section{
+    width:30%;
+    float:left;
+    margin: 1.5%;
+    background-color:wheat ;
+    padding: 20px;
+    border-radius: 0 0;
+    background-color: rgb(31, 32, 33);
+    color:#eee;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.features section:hover{background-color: #555;
+transform: scale(1.2);}
+.features section i{float:left;margin:0 10px 10px 75px;
+color: #2d99f7;}
+.features section h2{float:left;margin-top: 5px;
+text-align: center;
+color:#2d99f7;}
+
+.courses{
+    background-color: rgb(31, 32, 33);
+    height:33.333%;
+    overflow: hidden;
+}
+.courses i{float: left;margin: 60px 13px;}
+.courses h1{float: left; margin-top: 10px;
+padding:50px;}
+.courses section{
+    width:30%;
+    float:left;
+    margin: 1.5%;
+    background-color:wheat ;
+    padding: 20px;
+    border-radius: 15px 0 15px 0;
+    background-color: #2d99f7;
+    color:#eee;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.courses section:hover{background-color: #555;
+    transform: scale(1.2);}
+.courses section i{float:left;margin:0 10px 10px 75px;
+color: white;}
+.courses section h2{float:left;margin-top: 5px;
+text-align: center;
+color:white;}
+/*start of about-------------------------------------------------------*/
+.about{background-color: #2d99f7;
+    height:33.333%;}
+.about span{font-weight:bold ;}
+.about i{float: left;margin: 60px 13px;}
+.about h1{float: left; margin-top:10px;
+padding:50px;}
+
+
+footer{
+    overflow: hidden;
+    color:white;
+
+}
+footer .contact{
+    background-color: #555;
+    overflow: hidden;
+
+}
+footer .contact i{float: left;margin: 60px 13px;}
+footer .contact h1{float: left; margin-top:10px;
+    padding:50px;}
+footer .contact .left_half{width:50%;
+float:left;}
+footer .contact form input[type="text"]{margin: 12px;}
+
+
+footer .contact .form textarea{
+        width:90%;
+        height:120px;
+        border: none;
+        margin:10px 0 10px 0;
+        color:white;
+    }
+
+footer .contact .right_half{
+    float: left;
+    width:50%;
+    margin-top: -30px;
+
+}
+footer .contact .right_half section{display: flex;
+    margin: 15px 0 0 40px;
+    background-color: #777;
+}
+footer .contact .right_half i{float:left;margin:15px 16px 20px 10px;
+padding:25px;background-color: #2d99f7;border-radius: 50%;}
+footer .contact .right_half p{float:left;padding-top: 25px;}
+footer .contact .right_half span{font-weight: bolder;}
+
+footer .copyright{
+    background-color:#333;
+ 
+    color: #eee;
+
+}footer .copyright p{padding: 10px 10px;
+text-align: center;}
+footer ul{
+    list-style:none;
+    padding:0 0 50px 0;
+    text-align: center;
+
+}
+footer ul li{
+    display:inline-block;padding: 0;
+}
+footer ul li i{color:#70787B;}
+footer ul li i:hover{color:#fff;}

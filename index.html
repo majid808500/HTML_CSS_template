@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My-HTML5/CSS3-Template</title>
+    <!-- Font-awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Very nice reset by normalize library-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Main css style file -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+</head>
+<body>
+    
+<header>
+    <nav>
+        <div class="container" >
+
+            <input id="search" type="search" name="search">
+            <i class="sch fas fa-search fa-1x"></i>
+            <i class=" chk fas fa-check fa-2x"></i>
+            <h3><span>DO</span> it</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="container">
+            <h1>Are You Ready To Code?!</h1>
+            <h2>Just <span>Do</span> it</h2>
+            <input type="button" name="get_started" value="Get Started">
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="features" id="features">
+        <div class="container">
+            <i class="fas fa-chevron-right fa-2x"></i>
+            <h1>Features</h1>
+            <div class="clear_fix"></div>
+            <section>
+                <i class="fas fa-hand-holding-usd fa-2x"></i>
+                <h2>Free courses</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </section>
+            <section>
+                <i class=" fas fa-edit fa-2x "></i>
+                <h2>Daily Excersize</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              
+            </section>
+            <section>
+                <i class="fas fa-graduation-cap fa-2x"></i>
+                <h2>Certificates</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            
+            </section>
+        </div>
+    </div>
+
+    <div class="courses" id="courses">
+        <div class="container">
+            <i class="fas fa-chevron-right fa-2x"></i>
+            <h1>Courses</h1>
+            <div class="clear_fix"></div>
+            <section>
+                <i class="fab fa-html5 fa-2x"></i>
+                <h2>HTML5</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </section>
+            <section>
+                <i class=" fab fa-css3-alt fa-2x "></i>
+                <h2>CSS3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              
+            </section>
+            <section>
+                <i class="fab fa-js fa-2x"></i>
+                <h2>JavaScript</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            
+            </section>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <i class="fas fa-chevron-right fa-2x"></i>
+            <h1>About</h1>
+            <div class="clear_fix"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p><span>Email:</span>majidmosa808500m37@gmail.com</p>
+            <p><span>Phone:</span>+963 946 42 43 92</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+   
+    <div class="contact" id="contact">
+        <div class="container">
+            <i class="fas fa-chevron-right fa-2x"></i>
+            <h1>Contact Us</h1>
+            <div class="clear_fix"></div>
+            <div class="left_half">
+            <form class="form fl-lft" ng-app="myApp" ng-controller="myCtrl" name="myForm" novalidate>
+                <label>Name*&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="name" ng-model="name" placeholder="Username" required>
+                <span style="color:red" ng-show="myForm.name.$dirty && myForm.name.$invalid">
+                <span ng-show="myForm.name.$error.required">Username is required.</span></span> <br>
+                <label>Email*&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" name="email" ng-model="email" placeholder="email" required>
+                <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                <span ng-show="myForm.email.$error.required">Email is required</span>
+                <span ng-show="myForm.email.$error.email">Email is invalid</span>
+
+                </span>
+                </span>
+                <br>
+                <label>Address
+                </label>
+                <input type="text" ><br>
+                <label>Message</label>
+                <div class="clear_fix"></div>
+                <textarea></textarea> <br>     
+                <input type="submit" value="Contact Us">
+           </form> 
+        </div>
+        <div class="right_half">
+            <section>
+                <i class="fas fa-phone fa-2x "></i>
+               <p><span>Give Us A Call</span><br>+963 946 42 43 92</p>
+            </section>
+            <section>
+                <i class=" fas fa-envelope fa-2x"></i>
+                <p><span>Send Us A Mail</span><br>majidmosa808500m37@gmail.com</p>
+            </section>
+            <section>
+                <i class=" fas fa-map-marker-alt fa-2x"></i>
+                <p><span>Come Visit Us</span><br>Direction To Our Location</p>
+            
+            </section>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <p> Copyright 2020 &copy;Majid Co.</p>
+            <ul>
+                <li><i id="fb" class="fab fa-facebook-square fa-3x"></i></li>
+                <li><i id="tw" class="fab fa-twitter-square fa-3x" ></i></li>
+                <li><i id="gp" class="fab fa-google-plus-square fa-3x"></i></li>
+                <li><i id="in" class="fab fa-instagram-square fa-3x" ></i></li>
+                <li><i id="yo" class="fab fa-youtube-square fa-3x" ></i></li>
+ 
+ 
+            </ul>
+        </div>
+
+    </div>
+</footer>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
+
